@@ -1,0 +1,1883 @@
+<html lang="en" class="ng-scope">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nagpur's E-Library</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" integrity="sha384-YBbDpeqCJ2vwZI737AQNFtRkuGRhM4yl/jgebyvNjsoQ85AQXpCNGxo8pMjSwEZh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="content/css/loader.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://duelibrary.in/content/css/animate.css">
+    <link href="css/beautifier.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/du.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon" type="image/png" href="http://www.du.ac.in/uploads/du/images/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.css" integrity="sha512-UUm3pq6jF4wQAJ4J/HdQ/y/lG+nmA8nwKiy1oZpKg2EXGDPx1bP/WmduqrA3FjIMj5D+i9xw9FWQL3+ys5Vs7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed="" class="pg-loaded">
+    
+    <div ui-view="" >
+      <div id="headerTheme" class="ng-scope">
+        
+        <div id="winterTheme" class="resetHeader" >
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="bigContainer container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/home">
+                  <div class="libLogo">
+                    <img src="images/logo.png" alt="drdo digital library">
+                  </div>
+                </a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav winterNavBar">
+                  
+                  
+                  <li class="dropdown ng-scope" >
+                    <a href="javascript:void(0);" class="dropdown-toggle ng-binding" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">eResources </a>
+                  </li>
+                  <li class="dropdown exploreMedia ng-scope" >
+                    <a href="javascript:void(0);" class="dropdown-toggle ng-binding" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore More </a>
+                  </li>
+                  <li >
+                    <a href="javascript:void(0);" >News</a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="logIn ng-scope" >
+                    <a href="#/login" >Log In</a>
+                    
+                  </li>
+                  <li class="dropdown links">
+                    <a href="javascript:void(0);" class="btn btn-login header-content profile dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li >
+                        <a href="http://crl.du.ac.in/aboutus.pdf" target="_blank">About Library</a>
+                      </li>
+                      <li></li>
+                      <li>
+                        <a href="javascript:void(0);" >Submit Feedback</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+          <div class="bigContainer container">
+            <div class="row">
+              <div class="jumbotron col-sm-7">
+                <h1 class="animated fadeInDown ng-binding">Nagpur University E-Library</h1>
+                <h4 class="animated fadeInDown delay-1s ng-binding">Serving You Millions of eResources | 24x7 | Everywhere</h4>
+                <form class="navbar-form navbar-left ng-pristine ng-valid ng-valid-maxlength" novalidate="" ng-submit="search();">
+                  <div class="input-group col-xs-10">
+                    <div class="basicSearch">
+                      <div class="extraPadding col-xs-12 col-md-3 col-sm-3" >
+                        <div class="dropdown basicDropdownSearchBox">
+                          <button class="btn btn-default dropdown-toggle ng-binding" type="button" data-toggle="dropdown">All Publications <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li >
+                              <span>
+                                <i ></i>
+                              </span>
+                              <a href="javascript:void(0);">Search in Title</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a href="javascript:void(0);">Search in Author</a>
+                            </li>
+                            <li class="itemDivider" >
+                              <span>span> <a title="" >Search in Everything</a>
+                            </li>
+                            <li >
+                              <span>
+                                <i ></i>
+                              </span>
+                              <a title="" >All Publications</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >Articles</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >Collections</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >eBooks</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >eJournals</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >Expert Talks</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >Leisure Reading</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >Other Important links</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >News</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >Newspapers</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >Magazines</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >Theses</a>
+                            </li>
+                            <li >
+                              <span></span>
+                              <a title="" >Videos</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="borderLeft col-xs-10 col-md-8 col-sm-8" >
+                        <div angucomplete-alt="" id="ex5" placeholder="Enter Keywords to Search" pause="100" selected-object="searchTermObj" remote-url="/webservice/pub/getSuggestions" remote-url-request-formatter="remoteUrlRequestFn" remote-url-data-field="articles" title-field="title" description-field="description" minlength="2" input-class="form-control" match-class="highlight" class="ng-isolate-scope">
+                          <div class="angucomplete-holder" >
+                            <input id="ex5_value" name="" tabindex="" >
+                            <div id="ex5_dropdown" class="angucomplete-dropdown ng-hide" ng-show="showDropdown">
+                              <div class="angucomplete-searching ng-binding ng-hide" ng-show="searching" ng-bind="textSearching">Searching...</div>
+                              <div class="angucomplete-searching ng-binding" ng-show="!searching &amp;&amp; (!results || results.length == 0)" ng-bind="textNoResults">No results found</div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-1 searchBtn col-md-1 col-sm-1" >
+                        <span class="input-group-btn" >
+                          <i class="fa fa-search" aria-hidden="true"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="searchTipsBox">
+                  <a href="javascript:void(0);" data-toggle="modal" data-target="#searchTips" class="searchTipsIcon">
+                    <i class="fa fa-search"></i>Search Tips </a>
+                  <a >
+                    <i class="fa fa-play-circle"></i>Watch Tutorial </a>
+                </div>
+              </div>
+              <div class="col-sm-5">
+                <img src="images/hero.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div ui-view="" class="ng-scope">
+          <div id="subHomeTemplate" class="ng-scope">
+            <section class="libraryCollection">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="left-panel">
+                      <h3 class="commonThemeHeading">Massive Collection beyond eBooks &amp; eJournals</h3>
+                      <p>Read from over 1,100,000 eResources including top, peer reviewed eJournals and eBooks from world class publishers.</p>
+                      <a href="javascript:void(0);" >Browse eResources</a>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="right-panel browseByPublisher">
+                      <h3 class="commonThemeHeading">Browse Collection by Publisher</h3>
+                      <div class="tabbable-panel">
+                        <div class="tabbable-line">
+                          <div class="tab-content">
+                            <div id="myCarouselBrowser" class="myCarouselBrowser carousel slide">
+                              
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <div class="row-fluid">
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">ACS Journals</div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">AIP eJournals</div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">APA Databases</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="row-fluid">
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">APS eJournals</div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">Bloomsbury eBooks</div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img ng-src="https://drive.google.com/uc?id=1cBMm9xcklhbol20etF2GgbIVbT_TLnSj
+" onerror="this.onerror=null;this.src='https://duelibrary.in/content/images/drdo/default-book.jpg';" src="https://drive.google.com/uc?id=1cBMm9xcklhbol20etF2GgbIVbT_TLnSj
+">
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">Brill eBooks</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="row-fluid">
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">Britannica Academic</div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">CLA Online</div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">CMIE - Prowess IQ</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="row-fluid">
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">Cambridge University Press Journals</div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">Cambridge University Press eBooks</div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class="col-md-3 col-sm-3 col-xs-6 ng-scope" >
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="otherInfo ng-binding">Credo Reference</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                
+                              </div>
+                              
+                              <a class="left carousel-control" href=".myCarouselBrowser" data-slide="prev">
+                                <i class="fa fa-angle-left"></i>
+                              </a>
+                              <a class="right carousel-control" href=".myCarouselBrowser" data-slide="next">
+                                <i class="fa fa-angle-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div id="recommendedData" class="ng-scope">
+              <section id="staffBlock" class="libraryCollection ng-scope staffBlock" >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="headingBlock">
+                        <h3 class="commonThemeHeading ng-scope" >Staff Picks</h3>
+                      </div>
+                      <div class="tabbable-panel">
+                        <div class="tabbable-line nonescroller">
+                          <ul class="nav nav-tabs tbdark ng-scope" id="style-1" >
+                            <li   >
+                              <a href="javascript:void(0)" data-toggle="tab">eBooks</a>
+                            </li>
+                            <li   >
+                              <a href="javascript:void(0)" data-toggle="tab">eJournals</a>
+                            </li>
+                            
+                            <li  >
+                              <a href="javascript:void(0)" data-toggle="tab">Videos</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                          <div class="tab-content">
+                            <div class="tab-pane active">
+                              <div class="col-xs-12 staffBlockHeight">
+                                
+                                <div class="owl-carousel owl-theme owl-carousel-New owl-loaded owl-drag" id="owl-carousel-New">
+                                  <div class="owl-stage-outer">
+                                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1824px;">
+                                      <div class="owl-item active" style="width: 228px;">
+                                        <div >
+                                          <div>
+                                            <div>
+                                              <div class="docBlock">
+                                                <div class="bookCover" >
+                                                  <img >
+                                                </div>
+                                                <div class="padbookcover">
+                                                  <h4>
+                                                    <a >A Q&amp;A Approach to Organic Chemistry</a>
+                                                  </h4>
+                                                  <div class="otherInfo ng-binding">Taylor &amp; Francis</div>
+                                                </div>
+                                                <div class="actionbtns">
+                                                  <div >
+                                                    <div >
+                                                      <h4>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" target="_blank" title="A Q&amp;A Approach to Organic Chemistry" class="ng-binding">A Q&amp;A Approach to Organic Chemistry</a>
+                                                      </h4>
+                                                      <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                                      <div ng-switch="result.doc_type">
+                                                        <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="btnIconBox">
+                                                    <a href="javascript:void(0);" title="Add to Reading List" >
+                                                      <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" title="Export Citations" >
+                                                      <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                    </a>
+                                                    <span >
+                                                      <a href="#/login" title="Request an Item" >
+                                                        <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                                      </a>
+                                                      <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                                        <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                                      </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="owl-item active" style="width: 228px;">
+                                        <div >
+                                          <div>
+                                            <div>
+                                              <div class="docBlock">
+                                                <div class="bookCover" >
+                                                  <img >
+                                                </div>
+                                                <div class="padbookcover">
+                                                  <h4>
+                                                    <a >Anthropology of Religion: The Basics</a>
+                                                  </h4>
+                                                  <div class="otherInfo ng-binding">Taylor &amp; Francis</div>
+                                                </div>
+                                                <div class="actionbtns">
+                                                  <div >
+                                                    <div >
+                                                      <h4>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" target="_blank" title="Anthropology of Religion: The Basics" class="ng-binding">Anthropology of Religion: The Basics</a>
+                                                      </h4>
+                                                      <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                                      <div ng-switch="result.doc_type">
+                                                        <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="btnIconBox">
+                                                    <a href="javascript:void(0);" title="Add to Reading List" >
+                                                      <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" title="Export Citations" >
+                                                      <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                    </a>
+                                                    <span >
+                                                      <a href="#/login" title="Request an Item" >
+                                                        <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                                      </a>
+                                                    </span>
+                                                    <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                                      <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="owl-item active" style="width: 228px;">
+                                        <div >
+                                          <div>
+                                            <div>
+                                              <div class="docBlock">
+                                                <div class="bookCover" >
+                                                  <img >
+                                                </div>
+                                                <div class="padbookcover">
+                                                  <h4>
+                                                    <a >Behaviour for Learning: Promoting Positive Relat...</a>
+                                                  </h4>
+                                                  <div class="otherInfo ng-binding">Taylor &amp; Francis</div>
+                                                </div>
+                                                <div class="actionbtns">
+                                                  <div >
+                                                    <div >
+                                                      <h4>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" target="_blank" title="Behaviour for Learning: Promoting Positive Relationships in the Classroom" class="ng-binding">Behaviour for Learning: Promoting Positive Relat...</a>
+                                                      </h4>
+                                                      <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                                      <div ng-switch="result.doc_type">
+                                                        <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="btnIconBox">
+                                                    <a href="javascript:void(0);" title="Add to Reading List" >
+                                                      <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" title="Export Citations" >
+                                                      <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                    </a>
+                                                    <span >
+                                                      <a href="#/login" title="Request an Item" >
+                                                        <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                                      </a>
+                                                    </span>
+                                                    <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                                      <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="owl-item active" style="width: 228px;">
+                                        <div >
+                                          <div>
+                                            <div>
+                                              <div class="docBlock">
+                                                <div class="bookCover" >
+                                                  <img >
+                                                </div>
+                                                <div class="padbookcover">
+                                                  <h4>
+                                                    <a >Complexities of Researching with Young People</a>
+                                                  </h4>
+                                                  <div class="otherInfo ng-binding">Taylor &amp; Francis</div>
+                                                </div>
+                                                <div class="actionbtns">
+                                                  <div >
+                                                    <div >
+                                                      <h4>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" target="_blank" title="Complexities of Researching with Young People" class="ng-binding">Complexities of Researching with Young People</a>
+                                                      </h4>
+                                                      <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                                      <div ng-switch="result.doc_type">
+                                                        <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="btnIconBox">
+                                                    <a href="javascript:void(0);" title="Add to Reading List" >
+                                                      <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" title="Export Citations" >
+                                                      <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                    </a>
+                                                    <span >
+                                                      <a href="#/login" title="Request an Item" >
+                                                        <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                                      </a>
+                                                    </span>
+                                                    <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                                      <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="owl-item active" style="width: 228px;">
+                                        <div >
+                                          <div>
+                                            <div>
+                                              <div class="docBlock">
+                                                <div class="bookCover" >
+                                                  <img >
+                                                </div>
+                                                <div class="padbookcover">
+                                                  <h4>
+                                                    <a >Adventures in Social Skills: The ‘Finding Kite’ ...</a>
+                                                  </h4>
+                                                  <div class="otherInfo ng-binding">Taylor &amp; Francis</div>
+                                                </div>
+                                                <div class="actionbtns">
+                                                  <div >
+                                                    <div >
+                                                      <h4>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" target="_blank" title="Adventures in Social Skills: The ‘Finding Kite’ Teacher Resource" class="ng-binding">Adventures in Social Skills: The ‘Finding Kite’ ...</a>
+                                                      </h4>
+                                                      <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                                      <div ng-switch="result.doc_type">
+                                                        <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="btnIconBox">
+                                                    <a href="javascript:void(0);" title="Add to Reading List" >
+                                                      <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" title="Export Citations" >
+                                                      <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                    </a>
+                                                    <span >
+                                                      <a href="#/login" title="Request an Item" >
+                                                        <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                                      </a>
+                                                    </span>
+                                                    <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                                      <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="owl-item" style="width: 228px;">
+                                        <div >
+                                          <div>
+                                            <div>
+                                              <div class="docBlock">
+                                                <div class="bookCover" >
+                                                  <img >
+                                                </div>
+                                                <div class="padbookcover">
+                                                  <h4>
+                                                    <a >Indigenist Mobilization</a>
+                                                  </h4>
+                                                  <div class="otherInfo ng-binding">Orient Blackswan</div>
+                                                </div>
+                                                <div class="actionbtns">
+                                                  <div >
+                                                    <div >
+                                                      <h4>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" target="_blank" title="Indigenist Mobilization" class="ng-binding">Indigenist Mobilization</a>
+                                                      </h4>
+                                                      <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                                      <div ng-switch="result.doc_type">
+                                                        <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="btnIconBox">
+                                                    <a href="javascript:void(0);" title="Add to Reading List" >
+                                                      <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" title="Export Citations" >
+                                                      <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                    </a>
+                                                    <span >
+                                                      <a href="#/login" title="Request an Item" >
+                                                        <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                                      </a>
+                                                    </span>
+                                                    <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                                      <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="owl-item" style="width: 228px;">
+                                        <div >
+                                          <div>
+                                            <div>
+                                              <div class="docBlock">
+                                                <div class="bookCover" >
+                                                  <img >
+                                                </div>
+                                                <div class="padbookcover">
+                                                  <h4>
+                                                    <a >Ageing and Technology</a>
+                                                  </h4>
+                                                  <div class="otherInfo ng-binding">DOAB</div>
+                                                </div>
+                                                <div class="actionbtns">
+                                                  <div >
+                                                    <div >
+                                                      <h4>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" target="_blank" title="Ageing and Technology" class="ng-binding">Ageing and Technology</a>
+                                                      </h4>
+                                                      <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                                      <div ng-switch="result.doc_type">
+                                                        <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="btnIconBox">
+                                                    <a href="javascript:void(0);" title="Add to Reading List" >
+                                                      <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" title="Export Citations" >
+                                                      <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                    </a>
+                                                    <span >
+                                                      <a href="#/login" title="Request an Item" >
+                                                        <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                                      </a>
+                                                    </span>
+                                                    <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                                      <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="owl-item" style="width: 228px;">
+                                        <div >
+                                          <div>
+                                            <div>
+                                              <div class="docBlock">
+                                                <div class="bookCover" >
+                                                  <img >
+                                                </div>
+                                                <div class="padbookcover">
+                                                  <h4>
+                                                    <a >Confucian Role Ethics</a>
+                                                  </h4>
+                                                  <div class="otherInfo ng-binding">DOAB</div>
+                                                </div>
+                                                <div class="actionbtns">
+                                                  <div >
+                                                    <div >
+                                                      <h4>
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" target="_blank" title="Confucian Role Ethics" class="ng-binding">Confucian Role Ethics</a>
+                                                      </h4>
+                                                      <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                                      <div ng-switch="result.doc_type">
+                                                        <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="btnIconBox">
+                                                    <a href="javascript:void(0);" title="Add to Reading List" >
+                                                      <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0);" title="Export Citations" >
+                                                      <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                                    </a>
+                                                    <span >
+                                                      <a href="#/login" title="Request an Item" >
+                                                        <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                                      </a>
+                                                    </span>
+                                                    <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                                      <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="owl-nav">
+                                    <button type="button" role="presentation" class="owl-prev disabled">
+                                      <span aria-label="Previous">‹</span>
+                                    </button>
+                                    <button type="button" role="presentation" class="owl-next">
+                                      <span aria-label="Next">›</span>
+                                    </button>
+                                  </div>
+                                  <div class="owl-dots">
+                                    <button role="button" class="owl-dot active">
+                                      <span></span>
+                                    </button>
+                                    <button role="button" class="owl-dot">
+                                      <span></span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="modal fade" id="raUserPassModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog notificationModal">
+                  <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                    <div class="modal-body">
+                      <h4 class="text-center ng-binding"> requires another login for full text access. Please login using: </h4>
+                      <div class="lh50">&nbsp;</div>
+                      <table class="table text-left">
+                        <tbody>
+                          <tr>
+                            <td>UserName</td>
+                            <td class="ng-binding">
+                              <a href="javascript:void(0);" class="pull-right" title="Copy to Clipboard" >
+                                <i class="fa fa-clipboard"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Password</td>
+                            <td class="ng-binding">
+                              <a href="javascript:void(0);" class="pull-right" title="Copy to Clipboard" >
+                                <i class="fa fa-clipboard"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a href="" target="_blank" title="Countinue to publisher website" class="btn btn-primary"> Countinue to publisher website </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="saveDocModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog saveDocModal">
+                  
+                  <div class="modal-content ng-scope" >
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                    <div class="modal-body">
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <h3 class="text-center">You need to login to save documents.</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="trendingData" class="ng-scope">
+              <section class="libraryInfo libraryHelpPoints ng-scope" >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-7">
+                      <h3 class="commonThemeHeading ng-binding">New to Nagpur University E-Library?</h3>
+                      <p>Here are some quick links to help you get started.</p>
+                      <div class="lh30">&nbsp;</div>
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                          <a href="#/login">JOIN THE LIBRARY</a>
+                          <p>Signup for an account when connected to the campus network or contact library administrator. </p>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                          <a href="mailto:support@refread.com">GET HELP</a>
+                          <p >Contact the University Librarian at elibrary@duls.du.ac.in or <b>support@refread.com</b> for any support, feedback or suggestions. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-5 libraryWorkBlock">
+                      <h3 class="commonThemeHeading">HOW this eLIBRARY WORKS</h3>
+                      <a href="https://www.youtube.com/embed/hAb2yeiZm9U" target="_blank">
+                        <img src="https://duelibrary.in/content/images/drdo/video-placeholder.png" alt="img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="trendingBlock" class="trending-main libraryCollection ng-scope trendBlock" >
+                <div class="container">
+                  <div class="headingBlock">
+                    <h3 class="commonThemeHeading">Trending</h3>
+                  </div>
+                  <div class="">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="owl-carousel owl-theme owl-loaded owl-drag" id="owl-carousel-trending">
+                          <div class="owl-stage-outer">
+                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2736px;">
+                              <div class="owl-item active" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a >Economics &amp; Political Weekly</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding">Economics &amp; Political Weekly</div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="Economics &amp; Political Weekly" class="ng-binding">Economics &amp; Political Weekly</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <span >
+                                              <a href="#/login" title="Request an Item" >
+                                                <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                              </a>
+                                            </span>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-item active" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a >Science</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding">AAAS</div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="Science" class="ng-binding">Science</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <span >
+                                              <a href="#/login" title="Request an Item" >
+                                                <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                              </a>
+                                            </span>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-item active" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a >Understanding Criminal Justice: Sociological Per</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding">Sage</div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="Understanding Criminal Justice: Sociological Perspectives" class="ng-binding">Understanding Criminal Justice: Sociological Per...</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <span >
+                                              <a href="#/login" title="Request an Item" >
+                                                <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                              </a>
+                                            </span>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-item active" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a >India-Pakistanin War And Peace</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding">Taylor &amp; Francis</div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="India-Pakistanin War And Peace" class="ng-binding">India-Pakistanin War And Peace</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <span >
+                                              <a href="#/login" title="Request an Item" >
+                                                <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                              </a>
+                                            </span>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-item active" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a >Theory Of Knowledge</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding">Taylor &amp; Francis</div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="Theory Of Knowledge" class="ng-binding">Theory Of Knowledge</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <span >
+                                              <a href="#/login" title="Request an Item" >
+                                                <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                              </a>
+                                            </span>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-item" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a >Constitutional Democracy In India</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding">Taylor &amp; Francis</div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="Constitutional Democracy In India" class="ng-binding">Constitutional Democracy In India</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <span >
+                                              <a href="#/login" title="Request an Item" >
+                                                <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                              </a>
+                                            </span>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-item" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a >Physical Biology</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding">IOP Science</div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="Physical Biology" class="ng-binding">Physical Biology</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <span >
+                                              <a href="#/login" title="Request an Item" >
+                                                <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                              </a>
+                                            </span>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-item" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a >Principles Of Cybercrime</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding">Cambridge University Press</div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="Principles Of Cybercrime" class="ng-binding">Principles Of Cybercrime</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <span >
+                                              <a href="#/login" title="Request an Item" >
+                                                <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                              </a>
+                                            </span>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-item" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a >Feminism/Postmodernism</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding">Taylor &amp; Francis</div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="Feminism/Postmodernism" class="ng-binding">Feminism/Postmodernism</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <span >
+                                              <a href="#/login" title="Request an Item" >
+                                                <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                              </a>
+                                            </span>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-item" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a International Law and the ...</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding">Harvard University</div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="Partha Chatterjee on &quot;International Law and the Pedagogy of Violence&quot;" class="ng-binding">Partha Chatterjee on "International Law and the ...</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-when="Video" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Watch</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-item" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a >How liberalization impacts us reforms: How Bolly...</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding"></div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="How liberalization impacts us reforms: How Bollywood portrays them" class="ng-binding">How liberalization impacts us reforms: How Bolly...</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <span >
+                                              <a href="#/login" title="Request an Item" >
+                                                <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                              </a>
+                                            </span>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="owl-item" style="width: 228px;">
+                                <div >
+                                  <div class="">
+                                    <div>
+                                      <div class="docBlock">
+                                        <div class="bookCover">
+                                          <img >
+                                        </div>
+                                        <div class="padbookcover">
+                                          <h4>
+                                            <a >Anthropology of Religion: The Basics</a>
+                                          </h4>
+                                          <div class="otherInfo ng-binding">Taylor &amp; Francis</div>
+                                        </div>
+                                        <div class="actionbtns">
+                                          <div >
+                                            <div >
+                                              <h4>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#offCampus" title="Anthropology of Religion: The Basics" class="ng-binding">Anthropology of Religion: The Basics</a>
+                                              </h4>
+                                              <a href="javascript:void(0);" class="btn btn-view pull-left" data-toggle="modal" data-target="#offCampus">Detail</a>
+                                              <div ng-switch="result.doc_type">
+                                                <a href="javascript:void(0);" ng-switch-default="" data-toggle="modal" data-target="#offCampus" class="btn btn-read ng-scope">Read</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="btnIconBox">
+                                            <a href="javascript:void(0);" title="Add to Reading List" >
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" title="Export Citations" >
+                                              <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                            </a>
+                                            <span >
+                                              <a href="#/login" title="Request an Item" >
+                                                <i class="fa fa-info-circle fa-lg fa-fw"></i>
+                                              </a>
+                                            </span>
+                                            <a href="javascript:void(0);" title="Copy on Clipboard" >
+                                              <i class="fa fa-share-square fa-lg fa-fw" aria-hidden="true"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="owl-nav">
+                            <button type="button" role="presentation" class="owl-prev disabled">
+                              <span aria-label="Previous">‹</span>
+                            </button>
+                            <button type="button" role="presentation" class="owl-next">
+                              <span aria-label="Next">›</span>
+                            </button>
+                          </div>
+                          <div class="owl-dots">
+                            <button role="button" class="owl-dot active">
+                              <span></span>
+                            </button>
+                            <button role="button" class="owl-dot">
+                              <span></span>
+                            </button>
+                            <button role="button" class="owl-dot">
+                              <span></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="winterNewsBlock ng-scope" id="noticeBoardBlock" >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-7 ng-scope" >
+                      <div class="headingBlock">
+                        <h3 class="commonThemeHeading">News</h3>
+                        <div class="menuLink ng-scope" >
+                          <a href="#/news">View All</a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6 ng-scope" >
+                              <ul class="media-list">
+                                <li class="media">
+                                  <div class="media-left">
+                                    <a href="javascript:void(0);" >
+                                      <img class="media-object" >
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <a >Nagpur University students, teachers hold 'Tiranga Yatra'</a>
+                                    <p class="ng-binding">PTI</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6 ng-scope" >
+                              <ul class="media-list">
+                                <li class="media">
+                                  <div class="media-left">
+                                    <a href="javascript:void(0);" >
+                                      <img class="media-object" >
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <a >National Education Policy - Nagpur University plans value-add courses o...</a>
+                                    <p class="ng-binding">PTI</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6 ng-scope" >
+                              <ul class="media-list">
+                                <li class="media">
+                                  <div class="media-left">
+                                    <a href="javascript:void(0);" >
+                                      <img class="media-object" >
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <a >DU warns against fake exam circular on social media</a>
+                                    <p class="ng-binding">Express News Service</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6 ng-scope" >
+                              <ul class="media-list">
+                                <li class="media">
+                                  <div class="media-left">
+                                    <a href="javascript:void(0);" >
+                                      <img class="media-object" >
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <a >DU’s final-year students have their bucket lists sorted</a>
+                                    <p class="ng-binding">Karan Sethi</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6 ng-scope" >
+                              <ul class="media-list">
+                                <li class="media">
+                                  <div class="media-left">
+                                    <a href="javascript:void(0);" >
+                                      <img class="media-object" >
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <a >Nagpur University plans to launch certificate courses for students from...</a>
+                                    <p class="ng-binding">Times Now</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6 ng-scope" >
+                              <ul class="media-list">
+                                <li class="media">
+                                  <div class="media-left">
+                                    <a href="javascript:void(0);" >
+                                      <img class="media-object" >
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <a >Nagpur University plans to launch Start Research Centre for promoting S...</a>
+                                    <p class="ng-binding">Edu Graph</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6 ng-scope" >
+                              <ul class="media-list">
+                                <li class="media">
+                                  <div class="media-left">
+                                    <a href="javascript:void(0);" >
+                                      <img class="media-object" >
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <a >Nagpur University directs colleges to continue services of ad hoc teach...</a>
+                                    <p class="ng-binding">Career 360</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6 ng-scope" >
+                              <ul class="media-list">
+                                <li class="media">
+                                  <div class="media-left">
+                                    <a href="javascript:void(0);" >
+                                      <img class="media-object" >
+                                    </a>
+                                  </div>
+                                  <div class="media-body">
+                                    <a >After JNU, DU now shuts libraries indefinitely. Books to be issued onl...</a>
+                                    <p class="ng-binding">EDEX Live</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-5">
+                      
+                      <div class="noticeBlock ng-scope" >
+                        <h3 class="commonThemeHeading">Notice Board</h3>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="media-left media-middle ng-scope" >
+                              <a href="javascript:void(0);">
+                                <i class="fa fa-file-text-o media-object"></i>
+                              </a>
+                            </div>
+                            <div class="media-body ng-scope" >
+                              <h4 class="media-heading">
+                                <b class="ng-binding"> "For any error or broken link, observation, comments and feedback please write to us at elbrary@duls.du.ac.in"</b>
+                              </h4>
+                            </div>
+                          </div>
+                          <div class="media-left media-middle ng-scope" >
+                            <a href="https://du.refread.com/#/home" target="_blank">
+                              <i class="fa fa-link media-object"></i>
+                            </a>
+                          </div>
+                          <div class="media-body ng-scope" >
+                            <a href="https://du.refread.com/#/home" target="_blank" class="media-heading ng-binding">Nagpur University eLibrary is Live Now!</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          </section>
+          <section id="featuredCollectionBlock" class="libraryCollection featuredCollections ng-scope" >
+            <div class="container">
+              <div class="headingBlock">
+                <h3 class="commonThemeHeading">Featured Collections</h3>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 ng-scope" >
+                  <a class="contentBox ng-scope" >
+                    <h5 class="ng-binding">*DU Policies</h5>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4 ng-scope" >
+                  <a class="contentBox ng-scope" >
+                    <h5 class="ng-binding">3D Printing</h5>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4 ng-scope" >
+                  <a class="contentBox ng-scope" >
+                    <h5 class="ng-binding">Bioinformatics</h5>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4 ng-scope" >
+                  <a class="contentBox ng-scope" >
+                    <h5 class="ng-binding">Digital Marketing</h5>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4 ng-scope" >
+                  <a class="contentBox ng-scope" >
+                    <h5 class="ng-binding">IOT</h5>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4 ng-scope" >
+                  <a class="contentBox ng-scope" >
+                    <h5 class="ng-binding">Machine Learning</h5>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4 ng-scope" >
+                  <a class="contentBox ng-scope" >
+                    <h5 class="ng-binding">Mechatronics</h5>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4 ng-scope" >
+                  <a class="contentBox ng-scope" >
+                    <h5 class="ng-binding">Nanostructured Materials</h5>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4 ng-scope" >
+                  <a class="contentBox ng-scope" >
+                    <h5 class="ng-binding">Nanotechnology</h5>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4 ng-scope" >
+                  <a class="contentBox ng-scope" >
+                    <h5 class="ng-binding">Smart City Design</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="topUsers bgimguser ng-scope" id="feedbackSection" >
+            <div class="container">
+              <div class="headingBlock">
+                <h3 class="commonThemeHeading whitetext">Top Users</h3>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 ng-scope" >
+                  <div class="thumbnail">
+                    <img  >
+                    <div class="lh20">&nbsp;</div>
+                    <div class="rank ng-binding">Rank # 1</div>
+                    <h5 class="ng-binding"> DU eLibrary </h5>
+                    <p class="ng-binding"> Library <br>
+                      <br> 5 Followers
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 ng-scope" >
+                  <div class="thumbnail">
+                    <div class="no-img-circle ng-scope" >
+                      <span class="ng-binding"> A </span>
+                    </div>
+                    <div class="lh20">&nbsp;</div>
+                    <div class="rank ng-binding">Rank # 2</div>
+                    <h5 class="ng-binding"> AMISHA </h5>
+                    <p class="ng-binding">
+                      <br>
+                      <br> 0 Followers
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 ng-scope" >
+                  <div class="thumbnail">
+                    
+                    <img  >
+                    
+                    
+                    <div class="lh20">&nbsp;</div>
+                    <div class="rank ng-binding">Rank # 3</div>
+                    <h5 class="ng-binding"> RITURAJ BORUAH </h5>
+                    <p class="ng-binding"> COMMERCE <br>
+                      <br> 2 Followers
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                  <div class="topUserBlockContent">
+                    <p> You can also find your reading rank by activating the Socio-Lib Wall - A social way of finding best reading material. </p>
+                    <a href="#/feed" class="boldertext ng-scope" >Here�s how it works. </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="feedbackSection ng-scope" id="feedbackSection" >
+            <div class="container">
+              <div class="row flexrower">
+                <div class="col-md-8 col-sm-7">
+                  <div class="leftPanel">
+                    <h3 class="commonThemeHeading textlight ng-binding">
+                      <b>Download</b> the Nagpur University E-Library App
+                    </h3>
+                    <p class="textlight"> Access entire library collection on the go, request items, save and read from your personal reading list, track new additions and never miss out on any notification from the library. </p>
+                    <div class="lh20">&nbsp;</div>
+                    <div class="img-block raduimages">
+                      <a href="https://apps.apple.com/in/app/du-elibrary/id1584093384" target="_blank" >
+                        <img src="https://duelibrary.in/content/images/drdo/app-store.jpg" alt="Refread App Store">
+                      </a>
+                      <a href="https://play.google.com/store/apps/details?id=com.refread.du" target="_blank" >
+                        <img src="https://duelibrary.in/content/images/drdo/google-play.jpg" alt="Refread Google Play Store">
+                      </a>
+                    </div>
+                    <button class="btn-feedback" >
+                      <h5 class="commonThemeHeading">Share Your Feedback</h5> Help Us Get Better
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-5">
+                  <div class="rightPanel">
+                    <div class="imgBlock">
+                      <div class="libName">
+                        <img src="images/logo.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer id="newThemeFooter" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="footerBlock">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4>Developed by</h4>
+                  <a class="refreadLogo" href="https://www.refread.com" target="_blank" title="Digital Library Platform | College eLibrary | Refread for Digital Libraries">
+                    <img >
+                  </a>
+                </div>
+              </div>
+              <div class="content"> Copyrights 2016-23 <br> Refread Solutions Pvt. Ltd. <br>
+                <a href="https://www.refread.com/privacyandpolicy" target="_blank">Terms of use</a>
+                <a href="https://www.refread.com" target="_blank">Refread Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="footerBlock">
+              <h4>Links</h4>
+              <ul>
+                <li >
+                  <a href="http://crl.du.ac.in/aboutus.pdf" target="_blank">About Library</a>
+                </li>
+                <li>
+                  <a href="#/login" >Request an Item</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" >Submit Feedback</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="footerBlock lastBlock">
+              <h4>For Support</h4>
+              <div class="support ng-binding"> Write to support@refread.com , <span >
+                  <br>
+                  <br>
+                </span>
+                <div class="flexboday ng-binding ng-scope" ></i>undefined</span> +91 7669003059 undefined<br>undefined<br>undefined</div>undefined
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    	jQuery(document).ready(function() {
+    		 jQuery(window).on('scroll', function () {
+            if (jQuery(window).scrollTop()) {
+                jQuery("#winterTheme .navbar-default").addClass("homeHeaderBkg");
+            } else {
+                jQuery("#winterTheme .navbar-default").removeClass("homeHeaderBkg");
+            }
+        });
+    	});
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.js" integrity="sha512-l9DRrVI2wxxiYwx8ofVhH7WPPjtHaBPs4/GqAFwSsYakvSD9ys71GgAvjlHQSjhG1OVXgAc9Eu81bgeCEo3KhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
